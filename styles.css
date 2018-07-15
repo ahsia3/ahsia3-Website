@@ -32,12 +32,12 @@
 
 .topTabs {
 	display: inline; /*Removes line breaks before and after each list item to display them on one line */
-	border-right: 1px solid #fff; /*A vertical line*/
+	border-right: 1px solid #80ced6; /*A vertical line*/
 	position: relative;
 	letter-spacing: 5px;
 	margin: 0 auto; /*Centers the lists*/
 	padding: 5px; /*lists box size*/
-	color: white;
+	color: #80ced6;
 	
 
 }
@@ -52,19 +52,19 @@
 }
 
 .topTabs a:visited {
-	color: white;
+	color: #80ced6;
 }
 
 .topTabs a:link {
-	color: white;
+	color: #80ced6;
 }
 
 li:first-child.topTabs{
-	border-left: 1px solid #fff;
+	border-left: 1px solid #80ced6;
 }
 
 .ulDiv {
-	background: red;
+	background: #f9f9f9;
 	text-align: center;
 	margin-left: -10px;
 	position: fixed;
