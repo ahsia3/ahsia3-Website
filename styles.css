@@ -1,0 +1,93 @@
+/*
+	.<name> = class
+	#<name> = ID
+*/
+
+.HsiaAnthony {
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	width: auto;
+    	border: 2px solid white; /*border box*/
+    	padding: 25px; /*spacing between characters and border box*/
+    	margin: auto; /*spacing from top of page*/
+	letter-spacing: 30px; 
+}
+
+#body {
+	background-color: #dabc43;
+	font-family: "Courier New";
+	margin-top: 60px;
+}
+
+#topBottom {
+	font-size: 14px;
+	float: left;
+}
+
+.topTabs:hover {
+	text-decoration: underline;
+}
+
+.topTabs {
+	display: inline; /*Removes line breaks before and after each list item to display them on one line */
+	border-right: 1px solid #fff; /*A vertical line*/
+	position: relative;
+	letter-spacing: 5px;
+	margin: 0 auto; /*Centers the lists*/
+	padding: 5px; /*lists box size*/
+	color: white;
+	
+
+}
+
+.topTabs a {
+
+ 
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+	
+}
+
+.topTabs a:visited {
+	color: white;
+}
+
+.topTabs a:link {
+	color: white;
+}
+
+li:first-child.topTabs{
+	border-left: 1px solid #fff;
+}
+
+.ulDiv {
+	background: red;
+	text-align: center;
+	margin-left: -10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.Headings {
+	color: white;
+	text-align: center;
+	width: auto;
+	margin: auto;
+	letter-spacing: 20px; 
+}
+
+.Sections {
+	border: 2px solid white; /*border box*/
+    	padding: 25px; /*spacing between characters and border box*/
+	margin: 50px;
+  	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+#textParagraph {
+	letter-spacing: 2px;
+	padding-top: 30px;
+}
