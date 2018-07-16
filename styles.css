@@ -97,9 +97,14 @@ li:first-child.topTabs{
 	color: white;
 }
 
-.Picture img{
-	float: right;	
+img.Picture {
+	float: right;
 	margin-top: -60px;
 	margin-bottom: -10px;
 	height: 70px;
+}
+
+img:hover.Picture {
+	-webkit-transform: scaleX(-1);
+    	transform: scaleX(-1);
 }
