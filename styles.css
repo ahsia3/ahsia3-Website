@@ -18,7 +18,7 @@
 #body {
 	background-color: #80ced6;
 	font-family: "Courier New";
-	margin-top: 66.5px;
+	margin-top: 60px;
 }
 
 #topBottom {
@@ -97,9 +97,14 @@ li:first-child.topTabs{
 	color: white;
 }
 
-#Picture {
-	float: right;
-	margin-top: -25px;
-    
-	height: 75px;
+.Picture img{
+	float: right;	
+	margin-top: -60px;
+	margin-bottom: -10px;
+	height: 70px;
+}
+
+.Picture img:hover {
+	-webkit-transform: scaleX(-1);
+    	transform: scaleX(-1);
 }
