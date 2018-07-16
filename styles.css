@@ -70,6 +70,7 @@ li:first-child.topTabs{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	display: table;
 }
 
 .Headings {
@@ -102,5 +103,6 @@ img.Picture {
 	margin-top: -60px;
 	margin-bottom: -10px;
 	height: 70px;
+	display: table-row;
 }
 
