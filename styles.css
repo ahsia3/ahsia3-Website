@@ -104,7 +104,3 @@ img.Picture {
 	height: 70px;
 }
 
-img:hover.Picture {
-	-webkit-transform: scaleX(-1);
-    	transform: scaleX(-1);
-}
