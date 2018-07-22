@@ -115,7 +115,15 @@ img.Picture {
 	height: 70px;
 }
 
-#LinksAboutMe {
+div#LinksAboutMe {
+	float: right;
+	border: 0.1px solid #f9f9f9;
+	margin: 10px;
+  	padding-top: 100px;
+	padding-bottom: 5px;
+}
+
+#LinksAboutMe div {
 	float: right;
 	border: 0.1px solid #f9f9f9;
 	margin: 10px;
@@ -135,16 +143,11 @@ img.Picture {
 	height: 50px;
 }
 
-#LinkedinLogo img {
+#LinkedinLogo {
 	position: relative;
 	width: 100px;
 	height: 30px;
 	left: 25px;
 }
 
-img#LinkedinLogo {
-	position: relative;
-	width: 100px;
-	height: 30px;
-	left: 25px;
-}
+
