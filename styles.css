@@ -135,7 +135,14 @@ img.Picture {
 	height: 50px;
 }
 
-#LinkedinLogo {
+#LinkedinLogo img {
+	position: relative;
+	width: 100px;
+	height: 30px;
+	left: 25px;
+}
+
+img#LinkedinLogo {
 	position: relative;
 	width: 100px;
 	height: 30px;
