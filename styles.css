@@ -4,7 +4,7 @@
 */
 
 .HsiaAnthony {
-	color: white;
+	color: black;
 	font-size: 100px;
 	text-align: center;
 	font-family: "Freestyle Script";
@@ -16,7 +16,7 @@
 }
 
 #body {
-	background-color: #80ced6;
+	background-color: #f2f2f2;
 	font-family: "Courier New";
 	margin-top: 60px;
 }
@@ -24,43 +24,68 @@
 #topBottom {
 	font-size: 14px;
 	float: left;
+	border: 0.1px solid black;
+	display: inline;
+	position: relative;
+	letter-spacing: 5px;
+	margin: 0 auto;
+	padding 25px;
+	color: black;
+	line-height: 25px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+#topBottom:hover {
+	text-decoration-line: underline;
+	text-decoration-color: #80ab32;
+	text-decoration-style: double;
+	font-weight: bold;
+}
+
+#topBottom a {
+	text-decoration: none;
+	line-height: 25px;
+	border-radius: 4px;
 }
 
 .topTabs:hover {
-	text-decoration: underline;
+	text-decoration-line: underline;
+	text-decoration-color: #80ab32;
+	text-decoration-style: double;
+	font-size: 20px;
+	font-weight: bold;
+	border: 2px solid black;
 }
 
 .topTabs {
 	display: inline; /*Removes line breaks before and after each list item to display them on one line */
-	border-right: 1px solid #80ced6; /*A vertical line*/
+	//border-left: 1px solid #80ced6; /*A vertical line*/
 	position: relative;
 	letter-spacing: 5px;
 	margin: 0 auto; /*Centers the lists*/
 	padding: 5px; /*lists box size*/
-	color: #80ced6;
-	
-
+	color: black;
+	padding: 20px; /*space between words*/
 }
 
 .topTabs a {
-
- 
-  text-decoration: none;
-  line-height: 25px;
-  border-radius: 4px;
+	text-decoration: none;
+	line-height: 25px;
+	border-radius: 4px;
 	
 }
 
 .topTabs a:visited {
-	color: #80ced6;
+	color: black;
 }
 
 .topTabs a:link {
-	color: #80ced6;
+	color: black;
 }
 
 li:first-child.topTabs{
-	border-left: 1px solid #80ced6;
+	//border-left: 1px solid #80ced6;
 }
 
 .ulDiv {
@@ -73,7 +98,7 @@ li:first-child.topTabs{
 }
 
 .Headings {
-	color: white;
+	color: black;
 	text-align: center;
 	width: auto;
 	margin: auto;
@@ -115,52 +140,69 @@ img.Picture {
 	height: 70px;
 }
 
-div#LinksAboutMe {
-	float: right;
-	border: 0.1px solid #f9f9f9;
-	margin: 10px;
-  	padding-top: 100px;
-	padding-bottom: 5px;
-}
-
-#LinksAboutMe div {
-	float: right;
-	border: 0.1px solid #f9f9f9;
-	margin: 10px;
-  	padding-top: 100px;
-	padding-bottom: 5px;
-}
-
 #AboutMeHeading {
 	padding-left: 165px;
 }
 
-#GithubLogo img{
-	position: relative;
-	right: 50px;
-	bottom: 20px;
-	width: 50px;
-	height: 50px;
+div#LinksAboutMe {
+	float: right;
+	border: 0.1px solid black;
+	margin: 10px;
+  	padding-right: 25px;
+
 }
 
-img#GithubLogo {
-	position: relative;
-	right: 50px;
-	bottom: 20px;
-	width: 50px;
-	height: 50px;
+.LinksUL {
+	list-style-type: none;
+	text-align: center;
+	padding-right: 10px;
 }
 
-#LinkedinLogo img{
-	position: relative;
-	width: 100px;
-	height: 30px;
-	left: 25px;
+#GithubLogo {
+	
 }
-img#LinkedinLogo{
-	position: relative;
-	width: 100px;
-	height: 30px;
-	left: 25px;
+
+#LinkedinLogo {
+	
 }
+
+
+#GSUlogo1 {
+	padding-left: 100px;
+}
+
+#GSUul {
+	list-style-type: circle;
+	
+}
+
+.dropdownGSU {
+	
+	display: inline-block;
+	border: 0.45px solid black;
+	border-radius: 25px;
+}
+
+#GSUlogo:hover{
+	opacity: 0.5;
+}
+
+.dropdownGSUcontent {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdownGSU:hover .dropdownGSUcontent{
+	display: block;
+	position: fixed;
+	top: -2px;
+	right: 1px;
+	bottom: 1px;
+	opacity: 0.95;
+}
+
 
