@@ -44,15 +44,9 @@
 	background-color: #e6e6e6;
 }
 
-#topBottom a {
-	text-decoration: none;
-	line-height: 25px;
-	border-radius: 4px;
-}
-
 .topTabs:hover {
 	text-decoration-line: underline;
-	text-decoration-color: #80ab32;
+	//text-decoration-color: #80ab32;
 	text-decoration-style: double;
 	font-size: 20px;
 	font-weight: bold;
@@ -71,18 +65,18 @@
 	padding: 20px; /*space between words*/
 }
 
-.topTabs a {
+.aTabs a {
 	text-decoration: none;
 	line-height: 25px;
 	border-radius: 4px;
 	
 }
 
-.topTabs a:visited {
+.aTabs a:visited {
 	color: black;
 }
 
-.topTabs a:link {
+.aTabs a:link {
 	color: black;
 }
 
@@ -194,6 +188,7 @@ div#LinksAboutMe {
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
+	max-width: 500px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
@@ -207,4 +202,72 @@ div#LinksAboutMe {
 	opacity: 0.95;
 }
 
+.titleProjects {
+	background-color: #f2f2f2;
+	padding: 15px;
+	border: 10px outset gray;
+	border-radius: 2px;
+	font-weight: bold;
+}
 
+.titleProjects:hover {
+	background-color: white;
+	opacity: 0.65;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.titleSpan {
+	font-size: 50px;
+	font-weight: bold;
+	font-family: "Brush Script MT";
+	margin: 140px;
+	
+}
+
+.paragraphSpan {
+	border-left: 8px ridge grey;
+	font-family: "Bradley Hand ITC";
+	font-size: 20px;
+}
+
+.dateSpan {
+	font-style: italic;
+	font-weight: bold;
+	background-color: #e6e6e6;
+	font-family: "Bradley Hand ITC";
+	font-size: 20px;
+}
+
+.LinksSpan {
+	text-decoration: none;
+	color: black;
+}
+
+hr  {
+	display: block;
+	height: 30px;
+	margin-top: -31px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0.1px;
+	border-radius: 20px;
+}
+
+.AchievementSpan {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border: 5px ridge white;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+.AchievementSpan:hover {
+	background-color: white;
+	font-weight: bold;
+}
+
+.achivementPic {
+	padding: 20px;
+	margin-left: 50px;
+}
