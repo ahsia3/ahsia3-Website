@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Linking the CSS and icon for website -->
+<link rel="stylesheet" href="achievements_styles.css">
+<link rel="shortcut icon" href="pics/LogoAH.png" type="image/png">
+
+<title>Anthony Hsia</title>
+</head>
+<body id="body">
+
+<!-- Menu Tabs when click top left button -->
+<div class="a0Top">
+	<a href="#" onclick="myFunction()">
+		<img id="menu_icon" src="pics/3_bar_menu_icon.png" alt="3 bar menu icon">
+	</a>
+
+	<div>
+		<div id="hiddendiv" class="expand_page">
+			<a href="#" onclick="unFunction()">
+				<img id="menu_icon" src="pics/x.png" alt="x icon">
+			</a>
+
+			<ul class="MenuTabs">
+				<a href="index.html"><li class="MenuTabs">HOME</li></a>
+				<a href="about_me.html"><li class="MenuTabs">ABOUT ME</li></a>
+				<a href="projects.html"><li class="MenuTabs">PROJECTS</li></a>
+				<a href="achievements.html"><li class="MenuTabs">ACHIEVEMENTS</li></a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- Re-using JavaScript Functions except mathFunction() which is new here -->
+<div class="top">
+	<span id="math" class="description_left">
+		Mathematics Award
+		<br/>April 2010
+	</span>
+
+	<span id="gaming" class="description_left">
+		ELMS Band Dedication and Service
+		<br/>April 2011
+	</span>
+
+	<span id="activities" class="description_left">
+		ELHS Band Outstanding Musician
+		<br/>2013-2014
+	</span>
+
+	<span id="cs" class="description_left">
+		ELHS Band Senior Recognition Award
+		<br/>2014-2015
+	</span>
+	
+	<span id="edu" class="description_left">
+		CIW Site Development Associate
+		<br/>April 2015
+	</span>
+
+	<span id="hobbies" class="description_left">
+		Georgia Esports League (GEL) Smite State Champions
+		<br/>May 2018
+	</span>
+
+	<span id="learning" class="description_left">
+		Georgia Esports League (GEL) Paladins State Champions
+		<br/>May 2018
+	</span>
+</div>
+<div class="bookshelf">
+	<table>
+		<tr>
+			<td onmouseover="mathFunction()" onmouseout="mathFunction_out()">
+				<img src="pics/trophy.png" alt="trophy" height="100" width="80">
+			</td>
+			<td onmouseover="gamingFunction()" onmouseout="gamingFunction_out()">
+				<img src="pics/trophy.png" alt="trophy" height="100" width="80">
+			</td>
+			<td onmouseover="activitiesFunction()" onmouseout="activitiesFunction_out()">
+				<img src="pics/trophy.png" alt="trophy" height="100" width="80"></td>
+			<td onmouseover="csFunction()" onmouseout="csFunction_out()">
+				<img src="pics/trophy.png" alt="trophy" height="100" width="80">
+			</td>
+			
+			<td class="background_td" onmouseover="edFunction()" onmouseout="edFunction_out()">
+				<a href="https://drive.google.com/open?id=0B4uRpqllu9ZAQTFDTVVldWNURFU" target="_blank">
+				Anthony Hsia</a>
+			</td>
+			<td onmouseover="hobbiesFunction()" onmouseout="hobbiesFunction_out()">
+				<a href="http://gsu.meritpages.com/achievements/2018-Georgia-Esports-League-GEL-State-Championships/92021" target="_blank">
+				<img src="pics/trophy.png" alt="trophy" height="100" width="80"></a>
+			</td>
+			<td onmouseover="learningFunction()" onmouseout="learningFunction_out()">
+				<a href="http://gsu.meritpages.com/achievements/2018-Georgia-Esports-League-GEL-State-Championships/92021" target="_blank">
+				<img src="pics/trophy.png" alt="trophy" height="100" width="80"></a>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			
+		</tr>
+	</table>
+</div>
+
+
+<!-- JavaScript link -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
