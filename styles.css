@@ -1,0 +1,168 @@
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+body{
+	font-family: "Lucida Console";
+	letter-spacing: 1.5px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+li.work_links {
+	list-style-type: none;
+	display: inline;
+	margin: 5%;
+} 
+
+ul.work_links {
+	padding-left: 35%;
+	margin: 5%;
+}
+
+img.education, ul.education {
+	display: block;
+	margin: auto;
+	text-align: center;
+	list-style-type: none;
+}
+
+.education {
+	line-height: 30px;
+}
+
+img.splash {
+	display: block;
+	margin: auto;
+}
+
+p.about_me {
+	text-align: left;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.social_links {
+	margin-top: 2%;
+}
+
+img.social_links {
+	padding-left: 35%;
+}
+
+p.social_links {
+	display: inline;
+	text-align: center;
+	padding-left: auto;
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+color styling
+--------------------------------------------------------------*/
+body {
+	background-color: #C0C0C0;
+}
+.achievements, .education {
+	//background-color: #80ced6;
+	background: #FFD6A5;
+}
+
+.splash, .about_me {
+	color: black;
+	background-color: #80ced6;
+}
+
+.social_links, .work_links, .main {
+	background-color: #C0C0C0;
+}
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+.site {
+	max-width: 50em;
+	margin: -8px -8px auto -8px;
+}
+
+/* Splash section */
+.splash {
+	background: #80ced6;
+	padding-bottom: 2em;
+}
+
+@media screen and (min-width: 600px) {
+	.splash {
+		columns: 2;
+		column-gap: 2em;
+		grid-row: 3/4;
+	}
+
+	.splash {
+		padding-top: 2em;
+	}
+}
+
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 50em) {
+
+		.site {
+			max-width: none;
+			display: grid;
+			grid-template-columns: 35em auto 35em;
+			grid-template-areas: 
+				"header header header"
+				"about main achievements";
+			//border: 1px solid black;
+		}
+
+		.main {
+			grid-column: 2/3;
+			//border: 1px solid black;
+		}
+
+		.about_me {
+			grid-column: 1/4;
+			//border: 1px solid #FFD6A5;
+			grid-row: 2;
+		}
+
+		.social_links {
+			grid-column: 1/2;
+		}
+
+		.work_links {
+			grid-column: 3/4;
+		}
+
+		.achievements {
+			grid-column: 3/4;
+			//border: 1px solid black;
+		}
+
+		.education {
+			grid-column: 1/2;
+			grid-row: 3;
+		}
+
+/*	@media screen and (min-width: 65em) {
+
+		.site {
+			grid-template-columns: 15em auto 15em;
+		}
+
+		.main {
+			grid-column: 1/4;
+		}
+
+		.about_me {
+			grid-row: 2;
+			z-index: 1;
+		}*/
