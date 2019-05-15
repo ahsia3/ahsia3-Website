@@ -3,7 +3,7 @@ General styling
 --------------------------------------------------------------*/
 body{
 	font-family: "Lucida Console";
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 }
 
 h1, h2 {
@@ -21,15 +21,20 @@ ul.work_links {
 	margin: 5%;
 }
 
-img.education, ul.education {
+img.education {
 	display: block;
 	margin: auto;
-	text-align: center;
+}
+
+ul.education {
 	list-style-type: none;
+	padding-right: 6%;
 }
 
 .education {
+	text-align: center;
 	line-height: 30px;
+	font-size: 15px;
 }
 
 img.splash {
@@ -54,7 +59,6 @@ img.social_links {
 p.social_links {
 	display: inline;
 	text-align: center;
-	padding-left: auto;
 	font-weight: bold;
 }
 
@@ -162,7 +166,7 @@ CSS Grid layout for modern browsers:
 		.site {
 			max-width: none;
 			display: grid;
-			grid-template-columns: 35em auto 35em;
+			grid-template-columns: 36em auto 35em;
 			grid-template-areas: 
 				"social main_name work_links"
 				"about_me about_me about_me"
