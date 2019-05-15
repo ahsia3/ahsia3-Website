@@ -82,7 +82,7 @@ body {
 Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 .site {
-	max-width: 30em;
+	max-width: 50em;
 	margin: -8px -8px auto -8px;
 }
 
@@ -92,6 +92,7 @@ Basic responsive layout for all browsers:
 	padding-bottom: 2em;
 }
 
+/* put pictures side by side if screen is > 600px */
 @media screen and (min-width: 600px) {
 	.splash {
 		columns: 2;
@@ -105,42 +106,20 @@ Basic responsive layout for all browsers:
 }
 
 
-	
+/* mobile version */
 .site {
 	display: grid;
 	grid-template-areas: 
-		"work_links"
-		"main_name"
-		"about_me"
-		"education"
 		"social"
+		"education"
 		"about_me"
 		"splash"
-		"achievements";
+		"achievements"
+		"main_name"
+		"work_links";
 	//border: 1px solid black;
 }
-
-
-/*--------------------------------------------------------------
-CSS Grid layout for modern browsers:
---------------------------------------------------------------*/
-
-@supports (grid-area: auto) {
-
-	@media screen and (min-width: 50em) {
-
-		.site {
-			max-width: none;
-			display: grid;
-			grid-template-columns: 35em auto 35em;
-			grid-template-areas: 
-				"social main_name work_links"
-				"about_me about_me about_me"
-				"education splash achievements";
-			//border: 1px solid black;
-		}
-
-		.main {
+.main {
 			grid-area: main_name;
 			//border: 1px solid black;
 		}
@@ -171,6 +150,27 @@ CSS Grid layout for modern browsers:
 		.splash {
 			grid-area: splash;
 		}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+@supports (grid-area: auto) {
+
+	@media screen and (min-width: 50em) {
+
+		.site {
+			max-width: none;
+			display: grid;
+			grid-template-columns: 35em auto 35em;
+			grid-template-areas: 
+				"social main_name work_links"
+				"about_me about_me about_me"
+				"education splash achievements";
+			//border: 1px solid black;
+		}
+
+		
 
 /*	@media screen and (min-width: 65em) {
 
