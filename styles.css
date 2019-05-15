@@ -82,7 +82,7 @@ body {
 Basic responsive layout for all browsers:
 --------------------------------------------------------------*/
 .site {
-	max-width: 50em;
+	max-width: 30em;
 	margin: -8px -8px auto -8px;
 }
 
@@ -105,46 +105,20 @@ Basic responsive layout for all browsers:
 }
 
 
-		.main {
-			grid-area: main_name;
-			//border: 1px solid black;
-		}
-
-		.about_me {
-			grid-area: about_me;
-			//border: 1px solid #FFD6A5;
-			//grid-row: 2;
-		}
-
-		.social_links {
-			grid-area: social;
-		}
-
-		.work_links {
-			grid-area: work_links;
-		}
-
-		.achievements {
-			grid-area: achievements;
-			//border: 1px solid black;
-		}
-
-		.education {
-			grid-area: education;
-		}
-		.site {
-			display: grid;
-			grid-template-areas: 
-				"work_links"
-				"main_name"
-				"about_me"
-				"education"
-				"social"
-				"about_me"
-				"splash"
-				"achievements";
-			//border: 1px solid black;
-		}
+	
+.site {
+	display: grid;
+	grid-template-areas: 
+		"work_links"
+		"main_name"
+		"about_me"
+		"education"
+		"social"
+		"about_me"
+		"splash"
+		"achievements";
+	//border: 1px solid black;
+}
 
 
 /*--------------------------------------------------------------
@@ -192,6 +166,10 @@ CSS Grid layout for modern browsers:
 
 		.education {
 			grid-area: education;
+		}
+
+		.splash {
+			grid-area: splash;
 		}
 
 /*	@media screen and (min-width: 65em) {
