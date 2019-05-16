@@ -2,4 +2,5 @@
 ## Built with
 - HTML
 - CSS
-- a bit of JavaScript
+
+## Responsive Layout using CSS Grid
