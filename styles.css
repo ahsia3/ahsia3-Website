@@ -70,8 +70,6 @@ table.achievements {
 
 td.achievements {
 	cursor: grab;
-	background: rgba(76, 17, 80, 0.5);
-	color:white;
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: center;
@@ -82,7 +80,6 @@ div#ciw {
 	margin-top: -50px;
 	margin-left: -30px;
 	margin-right: -30px;
-	background: rgba(76, 17, 80, 0.3);
 	transform: scaleY(0);
 	transform-origin: bottom;
 	transition: transform 0.26s ease;
@@ -96,7 +93,6 @@ div#hide {
 	margin-top: -113px;
 	margin-left: -30px;
 	margin-right: -30px;
-	background: rgba(76, 17, 80, 0.3);
 	transform: scaleY(0);
 	transform-origin: bottom;
 	transition: transform 0.26s ease;
@@ -108,13 +104,11 @@ div#hide {
 td.achievements:hover div#hide {
 	transform: scaleY(1);
 	//transform-origin: top;
-	background: rgba(255, 80, 5, 0.3);
 }
 
 td.achievements:hover div#ciw {
 	transform: scaleY(1);
 	//transform-origin: top;
-	background: rgba(255, 80, 5, 0.3);
 }
 
 a, a:visited, a:link {
@@ -143,8 +137,22 @@ body {
 }
 
 td.achievements {
-
+	background: rgba(76, 17, 80, 0.5);
+	color:white;
 }
+
+div#ciw, div#hide {
+	background: rgba(76, 17, 80, 0.3);
+}
+
+td.achievements:hover div#hide {
+	background: rgba(255, 80, 5, 0.3);
+}
+
+td.achievements:hover div#ciw {
+	background: rgba(255, 80, 5, 0.3);
+}
+
 
 /*--------------------------------------------------------------
 Basic responsive layout for all browsers:
