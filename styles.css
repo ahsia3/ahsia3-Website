@@ -90,7 +90,7 @@ div#ciw {
 
 div#hide {
 	padding-top: 149px;
-	margin-top: -113px;
+	margin-top: -83px;
 	margin-left: -30px;
 	margin-right: -30px;
 	transform: scaleY(0);
@@ -234,7 +234,7 @@ CSS Grid layout for modern browsers:
 		.site {
 			max-width: none;
 			display: grid;
-			grid-template-columns: 35em auto;
+			grid-template-columns: 30em auto;
 			grid-template-areas: 
 				"main_name main_name"
 				"about_me about_me"
@@ -250,7 +250,7 @@ CSS Grid layout for modern browsers:
 		.site {
 			max-width: none;
 			display: grid;
-			grid-template-columns: 36em auto 35em;
+			grid-template-columns: 36em auto 30em;
 			grid-template-areas: 
 				"social main_name work_links"
 				"about_me about_me about_me"
@@ -264,7 +264,7 @@ CSS Grid layout for modern browsers:
 	.site {
 		max-width: none;
 		display: grid;
-		grid-template-columns: 36em auto auto 35em;
+		grid-template-columns: 36em auto auto 30em;
 		grid-template-areas: 
 			"work_links work_links work_links work_links"
 			"main_name main_name main_name social"
