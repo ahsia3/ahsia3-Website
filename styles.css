@@ -42,10 +42,11 @@ img.splash {
 	margin: auto;
 }
 
-p.about_me {
+p.about_me, .about_me_title {
 	text-align: left;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: center;
 }
 
 .social_links {
@@ -116,20 +117,57 @@ a, a:visited, a:link {
 	text-decoration: none;
 }
 
+.parallax {
+	padding: 150px;
+	/* The image used */
+	background-image: url("pics/me_grad.jpg");
+
+	/* Set a specific height */
+
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about_me_title{
+	//padding-right: 20%;
+	text-align: center;
+	/* The image used */
+	background-image: url("pics/AHpic.png");
+
+	/* Set a specific height */
+
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h2.about_me_title{
+	border: 10px solid #FFD6A5;
+	color: #FFD6A5;
+	font-size: 30px;
+}
+
 /*--------------------------------------------------------------
 color styling
 --------------------------------------------------------------*/
 body {
 	background-color: #C0C0C0;
 }
-.achievements, .education {
+.achievements, .education, .splash {
 	//background-color: #80ced6;
 	background: #FFD6A5;
 }
 
-.splash, .about_me {
+.about_me, .about_me_title {
 	color: black;
-	background-color: #80ced6;
+	background-color: #8ac6ef;
 }
 
 .social_links, .work_links, .main {
@@ -164,7 +202,7 @@ Basic responsive layout for all browsers:
 
 /* Splash section */
 .splash {
-	background: #80ced6;
+	//background: #80ced6;
 	padding-bottom: 2em;
 }
 
@@ -178,6 +216,11 @@ Basic responsive layout for all browsers:
 	.splash {
 		padding-top: 2em;
 	}
+	
+	.about_me, .about_me_title {
+		padding: 50px;
+		//color: grey;
+	}
 }
 
 
@@ -186,7 +229,9 @@ Basic responsive layout for all browsers:
 	display: grid;
 	grid-template-areas: 
 		"social"
+		"parallax"
 		"education"
+		"about_me_title"
 		"about_me"
 		"splash"
 		"achievements"
@@ -222,13 +267,21 @@ Basic responsive layout for all browsers:
 	grid-area: splash;
 }
 
+.about_me_title{
+	grid-area: about_me_title;
+}
+
+.parallax {
+	grid-area: parallax;
+}
+
 /*--------------------------------------------------------------
 CSS Grid layout for modern browsers:
 --------------------------------------------------------------*/
 
 @supports (grid-area: auto) {
 
-	/* For small regular monitors 720px */
+	/* For small regular screens at least 720px */
 	@media screen and (min-width: 720px) {
 
 		.site {
@@ -237,14 +290,15 @@ CSS Grid layout for modern browsers:
 			grid-template-columns: 30em auto;
 			grid-template-areas: 
 				"main_name main_name"
-				"about_me about_me"
+				"parallax parallax"
+				"about_me_title about_me"
 				"achievements splash"
 				"social work_links"
 				"education education";
 			//border: 1px solid black;
 		}
 
-	/* For Average Monitors 1920px */
+	/* For Average screens at least 1920px */
 	@media screen and (min-width: 1920px) {
 
 		.site {
@@ -253,12 +307,13 @@ CSS Grid layout for modern browsers:
 			grid-template-columns: 36em auto 30em;
 			grid-template-areas: 
 				"social main_name work_links"
-				"about_me about_me about_me"
+				"about_me about_me about_me_title"
+				"parallax parallax parallax"
 				"education splash achievements";
 			//border: 1px solid black;
 		}
 
-	/* For Ultra-wide Monitors 3440px */
+	/* For Ultra-wide screens at least 3440px */
 	@media screen and (min-width: 3440px) {
 
 	.site {
@@ -268,7 +323,8 @@ CSS Grid layout for modern browsers:
 		grid-template-areas: 
 			"work_links work_links work_links work_links"
 			"main_name main_name main_name social"
-			"about_me about_me about_me achievements"
+			"about_me_title about_me about_me about_me"
+			"parallax parallax parallax achievements"
 			"splash splash splash education";
 		//border: 1px solid black;
 	}
