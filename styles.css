@@ -26,9 +26,10 @@ img.education {
 	margin: auto;
 }
 
-ul.education {
+ul.education_list, ul.education_activities {
 	list-style-type: none;
-	padding-right: 6%;
+	padding-right: 30px;
+	border: 0px solid black;
 }
 
 .education {
@@ -127,12 +128,13 @@ a, a:visited, a:link {
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
+	opacity: 0.75;
 }
 
-.about_me_title{
+.about_me_title {
 	//padding-right: 20%;
 	text-align: center;
 	/* The image used */
@@ -160,7 +162,7 @@ color styling
 body {
 	background-color: #C0C0C0;
 }
-.achievements, .education, .splash {
+.achievements, .splash {
 	//background-color: #80ced6;
 	background: #FFD6A5;
 }
@@ -219,7 +221,15 @@ Basic responsive layout for all browsers:
 	
 	.about_me, .about_me_title {
 		padding: 50px;
-		//color: grey;
+	}
+
+	ul.education_list, ul.education_activities {
+		margin: 0px 50px 0 50px;
+		border: 10px solid #FFD6A5;
+	}
+
+	.parallax {
+		padding: 400px;
 	}
 }
 
@@ -275,6 +285,16 @@ Basic responsive layout for all browsers:
 	grid-area: parallax;
 }
 
+
+/* education */
+.education_list {
+	grid-area: education_list;
+}
+
+.education_activities {
+	grid-area: education_activities;
+}
+
 /*--------------------------------------------------------------
 CSS Grid layout for modern browsers:
 --------------------------------------------------------------*/
@@ -307,24 +327,39 @@ CSS Grid layout for modern browsers:
 			grid-template-columns: 36em auto 30em;
 			grid-template-areas: 
 				"social main_name work_links"
-				"about_me about_me about_me_title"
 				"parallax parallax parallax"
-				"education splash achievements";
+				"about_me_title about_me about_me"
+				"splash splash achievements"
+				"education education education";
 			//border: 1px solid black;
+		}
+
+		.education {
+			display: grid;
+			grid-template-columns: 650px 650px;
+			grid-template-areas: 
+				"education_list education_activities";
+			padding-left: 350px;
 		}
 
 	/* For Ultra-wide screens at least 3440px */
 	@media screen and (min-width: 3440px) {
 
-	.site {
-		max-width: none;
-		display: grid;
-		grid-template-columns: 36em auto auto 30em;
-		grid-template-areas: 
-			"work_links work_links work_links work_links"
-			"main_name main_name main_name social"
-			"about_me_title about_me about_me about_me"
-			"parallax parallax parallax achievements"
-			"splash splash splash education";
-		//border: 1px solid black;
+		.site {
+			max-width: none;
+			display: grid;
+			grid-template-columns: 36em auto auto 30em;
+			grid-template-areas: 
+				"social work_links work_links work_links"
+				"main_name main_name main_name main_name"
+				"about_me_title about_me about_me about_me"
+				"parallax parallax parallax parallax"
+				"splash splash splash achievements"
+				"education education education education";
+			//border: 1px solid black;
+		}
+
+		.education {
+			padding-left: 1050px;
+		}
 	}
