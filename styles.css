@@ -232,7 +232,8 @@ Basic responsive layout for all browsers:
 
 	ul.education_list, ul.education_activities {
 		margin: 0px 50px 0 50px;
-		border: 10px solid #3CB371;
+		border: 10px ridge grey;
+		border-style: groove ridge ridge groove;
 	}
 
 	.parallax {
