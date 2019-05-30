@@ -232,7 +232,7 @@ Basic responsive layout for all browsers:
 
 	ul.education_list, ul.education_activities {
 		margin: 0px 50px 0 50px;
-		border: 10px solid #FFD6A5;
+		border: 10px solid #3CB371;
 	}
 
 	.parallax {
@@ -347,6 +347,7 @@ CSS Grid layout for modern browsers:
 			grid-template-areas: 
 				"education_list education_activities";
 			padding-left: 350px;
+			padding-bottom: 200px;
 		}
 
 	/* For Ultra-wide screens at least 3440px */
