@@ -193,6 +193,13 @@ td.achievements:hover div#ciw {
 	background: rgba(255, 80, 5, 0.3);
 }
 
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(right, #ccc, #333, #ccc);
+}
+
 
 /*--------------------------------------------------------------
 Basic responsive layout for all browsers:
