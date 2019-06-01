@@ -218,7 +218,7 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/MazeRunner_2.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -228,7 +228,7 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/WASDodge.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -238,7 +238,7 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/chainVote.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -248,7 +248,7 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/TheLostCore.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -256,9 +256,9 @@ Background Images for PROJECTS
 
 .projects_pic#ForgeClicker {
 	/* The image used */
-	background-image: url("pics/ForgeClicker.png");
+	background-image: url("pics/ForgeClicker.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -268,7 +268,7 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/SuperSurvivor.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -278,8 +278,8 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/SecureSay.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: top;
+	background-attachment: local;
+	background-position: left;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -288,7 +288,7 @@ Background Images for PROJECTS
 	/* The image used */
 	background-image: url("pics/pizza.PNG");
 	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
+	background-attachment: local;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
