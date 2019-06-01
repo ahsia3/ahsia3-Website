@@ -216,7 +216,7 @@ Background Images for PROJECTS
 --------------------------------------------------------------*/
 .projects_pic#MazeRunner {
 	/* The image used */
-	background-image: url("pics/MazeRunner_2.png");
+	background-image: url("pics/MazeRunner_2.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -226,7 +226,7 @@ Background Images for PROJECTS
 
 .projects_pic#WASDodge {
 	/* The image used */
-	background-image: url("pics/WASDodge.png");
+	background-image: url("pics/WASDodge.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -236,7 +236,7 @@ Background Images for PROJECTS
 
 .projects_pic#chainVote {
 	/* The image used */
-	background-image: url("pics/chainVote.png");
+	background-image: url("pics/chainVote.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -246,7 +246,7 @@ Background Images for PROJECTS
 
 .projects_pic#TheLostCore {
 	/* The image used */
-	background-image: url("pics/TheLostCore.png");
+	background-image: url("pics/TheLostCore.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -266,7 +266,7 @@ Background Images for PROJECTS
 
 .projects_pic#SuperSurvivor {
 	/* The image used */
-	background-image: url("pics/SuperSurvivor.png");
+	background-image: url("pics/SuperSurvivor.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -276,7 +276,7 @@ Background Images for PROJECTS
 
 .projects_pic#SecureSay {
 	/* The image used */
-	background-image: url("pics/SecureSay.png");
+	background-image: url("pics/SecureSay.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: top;
@@ -286,7 +286,7 @@ Background Images for PROJECTS
 
 .projects_pic#pizza {
 	/* The image used */
-	background-image: url("pics/pizza.png");
+	background-image: url("pics/pizza.PNG");
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
