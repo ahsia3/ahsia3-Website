@@ -1,0 +1,538 @@
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+body{
+	font-family: "Lucida Console";
+	letter-spacing: 1px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+li.work_links {
+	list-style-type: none;
+	display: inline;
+	margin: 5%;
+} 
+
+ul.work_links {
+	padding-left: 35%;
+	margin-top: 25px;
+}
+
+img.education {
+	display: block;
+	margin: auto;
+}
+
+ul.education_list, ul.education_activities {
+	list-style-type: none;
+	padding-right: 30px;
+	border: 0px solid black;
+}
+
+.education {
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+img.splash {
+	display: block;
+	margin: auto;
+}
+
+p.about_me, .about_me_title {
+	text-align: left;
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: center;
+}
+
+.social_links {
+	margin-top: 2%;
+}
+
+img.social_links {
+	padding-left: 35%;
+}
+
+p.social_links {
+	display: inline;
+	text-align: center;
+	font-weight: bold;
+}
+
+table.achievements {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+td.achievements {
+	cursor: grab;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+div#ciw {
+	padding-top: 150px;
+	margin-top: -50px;
+	margin-left: -30px;
+	margin-right: -30px;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.26s ease;
+	transition-delay: 0.15s;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+div#hide {
+	padding-top: 149px;
+	margin-top: -83px;
+	margin-left: -30px;
+	margin-right: -30px;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.26s ease;
+	transition-delay: 0.15s;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+td.achievements:hover div#hide {
+	transform: scaleY(1);
+	//transform-origin: top;
+}
+
+td.achievements:hover div#ciw {
+	transform: scaleY(1);
+	//transform-origin: top;
+}
+
+a, a:visited, a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.parallax {
+	padding: 150px;
+	/* The image used */
+	background-image: url("pics/me_grad_better_edited_tree.png");
+
+	/* Set a specific height */
+
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.75;
+}
+
+.about_me_title {
+	//padding-right: 20%;
+	text-align: center;
+	/* The image used */
+	background-image: url("pics/AHpic.png");
+
+	/* Set a specific height */
+
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h2.about_me_title{
+	border: 10px solid #FFD6A5;
+	color: #FFD6A5;
+	font-size: 30px;
+}
+
+
+/* PROJECT STYLES including color styling*/
+div.projects {
+	background: #ACB384 ;
+	padding-top: 100px;
+}
+
+table.projects {
+	border: 0px solid #ACB384 ;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #ACB384 ;
+	padding-top: 100px;
+}
+
+td.projects, td.projects_pic {
+	border: 0px none #8ac6ef;
+	text-align: left;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 10%;
+	background: #FFD6A5;
+}
+
+ul.projects {
+	list-style-type: none;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+td.project_space {
+	width: 2%;
+	padding-top: 150px;
+}
+
+li.projects_title {
+	font-weight: bold;
+}
+
+li.projects_date {
+	opacity: 0.5;
+}
+
+li.projects_date, li.projects_description {
+	padding-bottom: 20px;
+}
+
+ul.projects_build {
+	text-shadow: 2px 2px #8ac6ef;
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+/*--------------------------------------------------------------
+Background Images for PROJECTS
+--------------------------------------------------------------*/
+.projects_pic#MazeRunner {
+	/* The image used */
+	background-image: url("pics/MazeRunner_2.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#WASDodge {
+	/* The image used */
+	background-image: url("pics/WASDodge.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#chainVote {
+	/* The image used */
+	background-image: url("pics/chainVote.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#TheLostCore {
+	/* The image used */
+	background-image: url("pics/TheLostCore.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#ForgeClicker {
+	/* The image used */
+	background-image: url("pics/ForgeClicker.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#SuperSurvivor {
+	/* The image used */
+	background-image: url("pics/SuperSurvivor.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#SecureSay {
+	/* The image used */
+	background-image: url("pics/SecureSay.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.projects_pic#pizza {
+	/* The image used */
+	background-image: url("pics/pizza.PNG");
+	/* Create the parallax scrolling effect */
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*--------------------------------------------------------------
+color styling
+--------------------------------------------------------------*/
+body {
+	background-color: #C0C0C0;
+}
+.achievements, .splash {
+	//background-color: #80ced6;
+	background: #FFD6A5;
+}
+
+.about_me, .about_me_title {
+	color: black;
+	background-color: #8ac6ef;
+}
+
+.social_links, .work_links, .main {
+	background-color: #C0C0C0;
+}
+
+td.achievements {
+	background: rgba(76, 17, 80, 0.5);
+	color:white;
+}
+
+div#ciw, div#hide {
+	background: rgba(76, 17, 80, 0.3);
+}
+
+td.achievements:hover div#hide {
+	background: rgba(255, 80, 5, 0.3);
+}
+
+td.achievements:hover div#ciw {
+	background: rgba(255, 80, 5, 0.3);
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(right, #ccc, #333, #ccc);
+}
+
+
+/*--------------------------------------------------------------
+Basic responsive layout for all browsers:
+--------------------------------------------------------------*/
+.site {
+	max-width: 50em;
+	margin: -8px -8px auto -8px;
+}
+
+/* Splash section */
+.splash {
+	//background: #80ced6;
+	padding-bottom: 2em;
+}
+
+/* put pictures side by side if screen is > 600px */
+@media screen and (min-width: 600px) {
+	.splash {
+		columns: 2;
+		column-gap: 2em;
+	}
+
+	.splash {
+		padding-top: 2em;
+	}
+	
+	.about_me, .about_me_title {
+		padding: 50px;
+	}
+
+	ul.education_list, ul.education_activities {
+		margin: 0px 50px 0 50px;
+		border: 10px ridge grey;
+		border-style: groove ridge ridge groove;
+	}
+
+	.parallax {
+		padding: 400px;
+	}
+
+	table.projects {
+		border: 10px solid #ACB384 ;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	ul.projects {
+		padding-left: 30px;
+	}
+}
+
+
+/* mobile version */
+.site {
+	display: grid;
+	grid-template-areas: 
+		"social"
+		"parallax"
+		"education"
+		"about_me_title"
+		"about_me"
+		"splash"
+		"achievements"
+		"main_name"
+		"work_links"
+		"projects";
+}
+
+.main {
+	grid-area: main_name;
+}
+
+.about_me {
+	grid-area: about_me;
+}
+
+.social_links {
+	grid-area: social;
+}
+
+.work_links {
+	grid-area: work_links;
+}
+
+.achievements {
+	grid-area: achievements;
+}
+
+.education {
+	grid-area: education;
+}
+
+.splash {
+	grid-area: splash;
+}
+
+.about_me_title{
+	grid-area: about_me_title;
+}
+
+.parallax {
+	grid-area: parallax;
+}
+
+.projects {
+	grid-area: projects;
+}
+
+
+/* education */
+.education_list {
+	grid-area: education_list;
+}
+
+.education_activities {
+	grid-area: education_activities;
+}
+
+.project_full {
+	grid-area: project_full;
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for modern browsers:
+--------------------------------------------------------------*/
+
+@supports (grid-area: auto) {
+
+	/* For small regular screens at least 720px */
+	@media screen and (min-width: 720px) {
+
+		.site {
+			max-width: none;
+			display: grid;
+			grid-template-columns: 30em auto;
+			grid-template-areas: 
+				"main_name main_name"
+				"parallax parallax"
+				"about_me_title about_me"
+				"achievements splash"
+				"education education"
+				"projects projects"
+				"social work_links";
+			//border: 1px solid black;
+		}
+
+	/* For Average screens at least 1920px */
+	@media screen and (min-width: 1920px) {
+
+		.site {
+			max-width: none;
+			display: grid;
+			grid-template-columns: 36em auto 30em;
+			grid-template-areas: 
+				"social main_name work_links"
+				"parallax parallax parallax"
+				"about_me_title about_me about_me"
+				"splash splash achievements"
+				"education education education"
+				"projects projects projects";
+			//border: 1px solid black;
+		}
+
+		.education {
+			display: grid;
+			grid-template-columns: 650px 650px;
+			grid-template-areas: 
+				"education_list education_activities";
+			padding-top: 70px;
+			padding-left: 350px;
+			padding-bottom: 200px;
+		}
+
+
+
+	/* For Ultra-wide screens at least 3440px */
+	@media screen and (min-width: 3440px) {
+
+		.site {
+			max-width: none;
+			display: grid;
+			grid-template-columns: 36em auto auto 30em;
+			grid-template-areas: 
+				"main_name main_name main_name main_name"
+				"about_me_title about_me about_me about_me"
+				"parallax parallax parallax parallax"
+				"splash splash splash achievements"
+				"education education education education"
+				"projects projects projects projects"
+				"social work_links work_links work_links";
+			//border: 1px solid black;
+		}
+
+		.education {
+			padding-left: 1050px;
+		}
+	}
